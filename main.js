@@ -50,6 +50,7 @@ form.addEventListener("submit", function (e) {
                 results.appendChild(img);
             });
 
+
         })
 
         
@@ -62,5 +63,12 @@ form.addEventListener("submit", function (e) {
             console.log("Error:", error);
         });
 
-}); 
+        $(document).ready(()=>{
+        })
+        })
+        
+
+    
+
+            
         
