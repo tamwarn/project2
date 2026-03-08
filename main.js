@@ -26,5 +26,41 @@ form.addEventListener("submit", function (e) {
 
     fetch(`https://api.giphy.com/v1/gifs/search?api_key=QIZfXq6LnAVOVYxkmHWK7dG7WEbu31B3=${keyword}&limit=12`)
 
+       
+        .then(function (response) {
+            return response.json();
+        })
+
         
+        .then(function (data) {
+
+            
+            results.innerHTML = "";
+
+            
+            data.data.forEach(function (gif) {
+
+                
+                let img = document.createElement("img");
+
+                
+                img.src = gif.images.fixed_height.url;
+
+                
+                results.appendChild(img);
+            });
+
+        })
+
+        
+        .catch(function (error) {
+
+            
+            results.innerHTML = "Something went wrong.";
+
+            
+            console.log("Error:", error);
+        });
+
+}); 
         
