@@ -69,6 +69,24 @@ form.addEventListener("submit", function (e) {
         
 
     
+$(document).ready(()=>{
 
-            
+    $("#submit").click(()=>{
+        let userInput = $("#search").val()
+        alert('clicked!')
+    })
+    $.ajax({
+       url:`https://api.giphy.com/v1/gifs/search?api_key=QIZfXq6LnAVOVYxkmHWK7dG7WEbu31B3=${keyword}&limit=12`
+    })
+    .done((res)=>{
+        let movies = res.Search;
+        $.each(movies,(i, e)=>{
+            let poster = e.Poster
+        console.log("poster", poster)
+        $("body").append(`<img src="${poster}" alt="movie poster"/>`)
+    })
+
+    })
+})
+
         
