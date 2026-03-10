@@ -1,0 +1,34 @@
+Data Structures
+
+Types of DS
+
+define:
+1 Linear DS
+arrays 
+linked lists 
+stacks
+queues
+
+define
+2 Non linear DS
+
+trees 
+Graphs
+heaps
+
+
+Answer
+A data structure is a specific way of organizing and storing data in a
+ computer so that it can be accessed and used efficiently.
+
+A linear data structure is a way of organizing data elements in a sequential 
+manner, where each element is connected to a single predecessor and successor
+ (except for the first and last elements). This arrangement allows for
+  straightforward, single-pass traversal of all elements. 
+
+
+Non-linear data structures organize data hierarchically or in networks
+ rather than sequentially, allowing for efficient, multi-level modeling of 
+ complex relationships. Unlike linear structures (arrays, lists), they store
+  elements in non-sequential memory, often using pointers to represent relationships,
+   with key examples being trees and graphs
