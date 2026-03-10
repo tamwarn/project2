@@ -51,3 +51,6 @@ Hash Table	Stores data as key-value pairs using a hash function for fast retriev
 Tree	A hierarchical structure with a single parent node (root) branching to child nodes.	Representing file systems, organizational maps, database indexing (B-trees), and decision trees.
 
 Graph	A collection of nodes (vertices) connected by edges representing relationships.	Modeling social networks, transportation systems (GPS routing), and computer networks.
+
+A heap is a specialized, complete binary tree-based data structure that satisfies the "heap property," where the parent node is always greater than (Max-Heap) or smaller than (Min-Heap) its child nodes. It is primarily used to implement priority queues and for efficient 
+ insertion and deletion, commonly represented using an array. 
